@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background: #f1f5f8;
+}
+.title {
+    width: fit-content;
+    margin: 3rem auto;
+    color: #102a42;
+}
+.title h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+.section-center {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.image {
+    width: 45%;
+    height: fit-content;
+}
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about {
+    background: white;
+    width: 50%;
+    height: 23rem;
+    border-radius: 10px;
+}
+.btn-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.btn {
+    border: transparent;
+    background: #dadada;
+    font-size: 1.2rem;
+    padding: 0.7rem 0;
+    cursor: pointer;
+    transition: background-color 0.4s ease,
+                color 0.4s ease;
+}
+.btn:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+.btn:nth-child(3) {
+    border-top-right-radius: 10px;
+}
+.btn:hover {
+    background: #dae2ec;
+    color: #49a6e9;
+}
+.btn-container .active {
+    background: white;
+}
+.btn-container .active:hover {
+    color: black;
+}
+.about-content {
+    padding: 1rem 2rem;
+}
+.content h2 {
+    font-size: 1.2rem;
+}
+.content p {
+    color: #102a42;
+    margin: 1rem 0;
+}
+.content {
+    display: none;
+}
+.about-content .active {
+    display: block;
+}
